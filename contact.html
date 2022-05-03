@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--Establishing the language of the website-->
+<html lang="en-GB">
+  <head>
+    <!--Setting information about the data within the website-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Italian Restaurant in North of Glasgow">
+    <meta name="keywords" content="Italian food, Italian Restaurant, Restaurants in Glasgow">
+    <meta name="author" content="Eilidh Boyd">
+
+    <!--Title of the website-->
+    <title>Glasgow Italian Grill</title>
+
+    <!--Insert CSS Styling-->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <!--Insert Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+
+    <!--Allow Website Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--Insert Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  
+  <body>
+
+    <!--Navigation Bar-->
+    <nav id ="navbar">
+      <!--Mobile Navigation Icon-->
+      <a href="javascript:void(0);" id="mobileNavIcon">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <!--Desktop Navigation-->
+       <nav id="mobileDesktopNav">
+        <ul id="menuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!--Restaurant header-->
+      <h1 id="heading">Glasgow Italian Grill</h1>
+    </nav>
+    <!--Mobile navigation-->
+    <nav id="mobileNavDrawer">
+      <ul id="menuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <!--Insert content here-->
+    <main>
+      <section id="contact-grid">
+      <div id="locationInfo">
+      <h1 class="mainHeading">Locate us</h1>
+      <!--Embedded map-->
+      <iframe id="googleMap" width="100%" height="500" src="https://maps.google.com/maps?q=19+Hatfield+Dr,+Glasgow+G12+0YE&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      <div id="openingTimesInfo">
+      <p id="openingTimes">Opening times: <br><br>
+      Sunday - Thursday <br>
+      12 noon – 9:00pm <br><br>
+      Friday & Saturday <br>
+      12 noon – 10:00pm  </p>
+      </div>
+      </div>
+        
+      <!--Contact Form-->
+      <div id="contactForm">
+      <h1 class="mainHeading">Have questions?</h1>
+      <form>
+
+        <!--Full name input box-->
+        <label for="fname">Enter your full name:*</label><br>
+        <input type="text" id="fname" name="fname" required placeholder="e.g Joe Bloggs"><br>
+        
+        <!--Email input box-->
+        <label for="email">Email Address:*</label><br>
+        <input type="email" id="email" name="email" placeholder="e.g jbloggs@provider.com" required><br>
+
+        <!--Phone number input box-->
+        <label for="phoneNo">Phone number:</label><br>
+        <input type="tel" id="phoneNo" name="phoneNo" pattern="[1-9]{5}[0-9]{5}" maxlength=11 placeholder="1234567890"required><br>
+
+        <!--Drop down list of query options-->
+        <label for="queryType">Select your issue:*</label>
+        <select name="queryType" id="queryType" required>
+          <option value="menu">About menu</option>
+          <option value="directions">About directions</option>
+          <option value="bookings">About bookings</option>
+          <option value="other">Other...</option>
+        </select><br>
+
+        <!--Text box for user to input answer-->
+        <textarea rows="4" cols="50" name="comment" form="usrform" required> Enter your query here...</textarea><br>
+
+        <p style="font-size:15px;">* = Required</p>
+
+        <!--Submit button-->
+        <button id ="button" onclick="submitMsg()">Submit</button>
+      </form>
+      </div>
+      </section>
+    </main>
+
+    <!--Website Footer-->
+    <footer id ="footer">
+      <p>Follow us!
+    <!--Social media icons-->
+        <a href ="index.html" class="fa-brands fa-facebook-f"></a>
+        <a href ="index.html" class="fa-brands fa-instagram"></a>
+        <a href ="index.html" class="fa-brands fa-twitter"></a></p>
+      <p style="text-align:center;">Address: Glasgow Italian Grill,<br>
+        19 Hatfield Drive, <br>
+        Anniesland,<br>
+        Glasgow G12 0YE</p>
+      <p>Phone number: 0141 9496 0555 </p>
+      <p>Email address: <a href="mailto:Italian.grill@glasgow.com">Italian.grill@glasgow.com</a></p>
+    </footer>
+
+    <!--Insert Javascript-->
+    <script src="script.js"></script>
+  </body>
+</html>
