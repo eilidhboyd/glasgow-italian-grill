@@ -1,0 +1,406 @@
+body {
+  margin:0%;
+}
+
+/*Formats all content within main tag*/
+main {
+  padding:5px;
+}
+
+/*Sets all text to assigned font*/
+* {
+  font-family:Open Sans;
+}
+
+/*Styles headings in the main tag on each page*/
+.mainHeading {
+  text-align:center;
+}
+
+/*Styles the restuarant name in the header*/
+#heading {
+  font-family:Dancing Script, serif;
+  font-size:1.5rem;
+  padding:7px;
+}
+
+/*Styles and formats contents in the navigation bar*/ 
+#navbar {
+  position:relative;
+  background-color:#9a4e30 ;
+  width:100%;
+  color:white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*MEDIA QUERIES*/
+
+/* Rules that apply ONLY to phones */
+@media only screen and (max-width : 768px) {
+  #tabletPicture, #desktopPicture {
+    display:none;/*Hides picture optimised for tablet and desktop displays*/
+  }
+
+  /*Formatting the picture navigation*/
+  #picNavigation {
+    display:inline;
+  }
+
+  /*Changing size of phone picture so it fits in screen*/
+  img {
+    width:95%;
+  }
+
+  form, input, textarea, #button { 
+    width: 95%; 
+    margin-left:5px;
+  }
+
+}
+
+/*Rules that apply ONLY to tablets*/
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+  #mobilePicture, #desktopPicture {
+    display:none;/*Hides picture optimised for mobile and desktop displays*/
+  }
+}
+
+/*Rules that only apply to screens smaller than 1024px/desktop display*/
+@media only screen and (max-width:1024px){
+  /*Styles & positions the menu icon*/
+  #mobileNavIcon {
+  color:white;
+  margin-left:15px;/*Positions and changes colour of menu icon*/
+  }
+  /*Styles the navigation bar that's hidden until user clicks*/
+  #mobileNavDrawer {
+    display:none;
+    position:absolute;
+    width:100%;
+    background-color:#dea17c;
+  }
+
+  /*Adds a hover effect when user puts cursor over item*/
+  #menuItems li a:hover {
+  background-color:#9a4e30;
+  }
+
+  /*Hides desktop navigation layout*/
+  #mobileDesktopNav{
+    display:none;
+  }
+
+  /*Adds responiveness to div - will format itself depending on display size*/
+  #aboutRestaurant {
+  display:flex;
+  justify-content:space-evenly;
+  flex-flow:row wrap;
+  }
+
+  /*Hides heading for desktop displays*/
+  #desktopSubHead {
+    display:none;
+  }
+
+  /*Displays heading for mobile and tablet displays*/
+  #mobiletabSubHead {
+    text-align:center;
+    font-style:italic;
+  }
+
+  #picNavigation, .slideshow-container {
+    margin-left:8px;
+  }
+}
+
+/*Rules that only apply to desktop displays*/
+@media only screen and (min-width: 1024px) {
+  #mobileNavIcon, #mobileNavDrawer {
+    display:none; /*Phone/tablet navigation menu & button will be hidden*/
+    }
+
+  /*Styles the desktop navigation bar*/
+  #mobileDesktopNav {
+    background-color:#9a4e30 ;
+  }
+
+  /*Adds hover effect...*/
+  #menuItems li a:hover {
+    background-color:#dea17c;
+  }
+  
+  /*Mobile and tablet display pictures will be hidden*/
+  #mobilePicture, #tabletPicture {
+    display:none;
+  }
+  
+  /*Adds responiveness to div - will format itself depending on display size*/
+  #aboutRestaurant, #locationInfo {
+    margin-bottom:15px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  /*Formats content into a column*/
+  #locationInfo {
+    flex-direction:column;
+    margin-left:50px;
+  }
+  
+  /*Adds responsive effect to image - when full screen on desktop display, image will display left of text*/
+  #desktopPicture, {
+    max-width: 50%;
+    flex-basis:40%;
+  }
+
+  #googleMap {
+    max-width:75%;
+    flex-basis:80%;
+  }
+
+
+  /*Styles the company statement and overview text...*/
+  #overviewText, #menuInfo {
+    font-size:15px;
+    padding-left:20px;
+  }
+
+  /*Hides sub heading established for mobile and tablet displays*/
+  #mobiletabSubHead {
+    display:none;
+  }
+
+  /*Displays sub heading established for desktop displays*/
+  #desktopSubHead {
+    text-align:center;
+    font-style:italic;
+  }
+
+  /*Setting up grid layout*/
+  #contact-grid {
+  display:grid;grid-gap:2px;grid-auto-rows: minmax(100%, auto);;
+  }
+
+  /*Positions divs within grid*/
+  #locationInfo {grid-column: 1 / 3;grid-row: 1 / 2;font-size: 20px;padding: 5px;margin:bottom:}
+  #contactForm {grid-column: 3 / 6;grid-row: 1 / 2;;font-size: 20px;padding: 5px;}
+
+  /*Displays heading for mobile and tablet displays*/
+  .mainHeading
+
+}
+
+/*END OF MEDIA QUERIES*/
+  
+
+#menuItems {
+  list-style-type:none;
+  padding:0px;
+  margin:0px;
+  width:100%;
+}
+
+/*Formats the list items*/
+#menuItems li {
+  float:left;
+  border-right: 2px solid white;
+}
+
+/*Styles the text inside the navigation bar*/
+#menuItems li a {
+  padding:14px 16px;
+  text-decoration:none;
+  text-align:center;
+  display:block;
+  color:white;
+}
+
+/*Styling index page's body text*/
+#overviewText, #menuInfo {
+  text-align:center;
+}
+/*Styling footer*/
+#footer {
+  display:flex;
+  justify-content:space-evenly;
+  flex-flow:row wrap;
+  position:relative;
+  background-color:#6b7050 ;
+  width:100%;
+  color:white;
+}
+
+/*Styles the email address link*/
+#footer a {
+  color:white;
+}
+
+/*Styling all icons in footer*/
+#footer a.fa-brands {
+  padding:10px;
+  font-size:1.10rem;
+  text-align:center;
+  width:20px;
+  margin-right:5px;
+  margin-left:5px;
+  text-decoration:none;
+  border-radius:80%;
+  background-color:white;
+  color:#6b7050;
+}
+
+
+
+/*Slideshow styling*/
+.slideshow-container {
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+
+/*Arrow styling*/
+.buttons {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+ 
+}
+
+.previous {
+  margin-right:345px;
+}
+
+
+/*Adding hover effect to arrow buttons*/
+.previous:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Styling the dots */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+  display:inline-block;
+}
+
+/*Adds hover effect to button*/
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*Adding responsive effects to images - will format themselves depending on display*/
+#profiles {
+  display:flex;
+  justify-content:space-evenly;
+  flex-flow:row wrap;
+}
+
+#picNavigation, -slideshow-container {
+  display:flex;
+  justify-content:space-around;
+  align-content:center;
+  flex-direction:row;
+}
+
+#profiles {
+  margin-bottom:5px;
+}
+
+/*Positions contents within container*/
+.staff-container {
+  position: relative;
+}
+
+/*Positions images within container*/
+.staff-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*Styles overlay transition*/
+.staff-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #dea17c ;
+}
+
+/*Transparency strength of overlay*/
+.staff-container:hover .staff-overlay {
+  opacity: 0.9;
+}
+
+
+/*Styles text inside overlay*/
+.staff-text {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding:5px;
+}
+
+/*Styles contact form*/
+input, textarea {
+   padding: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+#button {
+border-style: outset;
+height: 25px;
+width: 75%;
+margin-bottom:5px;
+}
+
+/*Aligning items in center*/
+#openingTimes, form {
+  text-align:center;
+}
+
+

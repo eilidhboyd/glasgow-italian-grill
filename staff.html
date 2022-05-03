@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--Establishing the language of the website-->
+<html lang="en-GB">
+  <head>
+    <!--Setting information about the data within the website-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Italian Restaurant in North of Glasgow">
+    <meta name="keywords" content="Italian food, Italian Restaurant, Restaurants in Glasgow">
+    <meta name="author" content="Eilidh Boyd">
+
+    <!--Title of the website-->
+    <title>Glasgow Italian Grill</title>
+
+    <!--Insert CSS Styling-->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <!--Insert Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+
+    <!--Allow Website Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--Insert Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  
+  <body>
+
+    <!--Navigation Bar-->
+    <nav id ="navbar">
+      <!--Mobile Navigation Icon-->
+      <a href="javascript:void(0);" id="mobileNavIcon">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <!--Desktop Navigation-->
+       <nav id="mobileDesktopNav">
+        <ul id="menuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!--Restaurant header-->
+      <h1 id="heading">Glasgow Italian Grill</h1>
+    </nav>
+    <!--Mobile navigation-->
+    <nav id="mobileNavDrawer">
+      <ul id="menuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <!--Insert content here-->
+    <main>
+      <!--Headings for staff page-->
+      <h1 class="mainHeading">Meet our staff!</h1>
+      <h4 id="desktopSubHead">Hover over an image to find out more about our staff.</h4>
+      <h4 id="mobiletabSubHead">Tap an image to find out more about our staff.</h4>
+      
+      <!--Staff profiles-->
+      <div id = "profiles">
+        
+        <div class="staff-container">
+          <img src = "Images/staff-images/marco-Iopollo.jpg" alt = "Picture of Marco Iopollo" class="staff-image">
+          <div class="staff-overlay">
+            <div class="staff-text">Name: Marco Iopollo <br>
+              Position : Chef / Owner <br>
+              Marco started the restaurant with his sister.  Grew up in Milan. Learnt how to cook from his mother 
+              and has worked in kitchens in some of the best restaurants in Milan. </div>
+          </div>
+        </div>
+
+        <div class="staff-container">
+          <img src = "Images/staff-images/valentina-Iopollo.jpg" alt = "Picture of Valentina Iopollo" class="staff-image">
+          <div class="staff-overlay">
+            <div class="staff-text">Name: Valentina Iopollo <br>
+              Position : Chef / Owner <br>
+              Valentina like her brother learnt how to cook from their mother.  Valentina first came to Scotland in 
+              the 90s and convinced her brother to start the restaurant. </div>
+          </div>
+        </div>
+
+        <div class="staff-container">
+          <img src = "Images/staff-images/maria-rossi.jpg" alt = "Picture of Maria Rossi" class="staff-image">
+          <div class="staff-overlay">
+            <div class="staff-text">Name: Maria Rossi <br>
+              Position : Manager <br>
+              Maria joined the restaurant in 2017 as manager.  Maria has managed many restaurants in her career 
+              and oversees the recruiting and hiring restaurant staff as well as greeting and serving restaurant 
+              guests. </div>
+          </div>
+        </div>
+
+        <div class="staff-container">
+          <img src = "Images/staff-images/susan-smith.jpg" alt = "Picture of Susan Smith" class="staff-image">
+          <div class="staff-overlay">
+            <div class="staff-text">Name: Susan Smith <br>
+              Position : Head Waitress <br>
+              Susan has been with us for 7 years and now has responsibilities include helping assign waitstaff 
+              tables, talking to patrons to ensure they have a good experience, and performing opening and 
+              closing duties. </div>
+          </div>
+        </div>
+
+        <div class="staff-container">
+          <img src = "Images/staff-images/rosa-ricci.jpg" alt = "Picture of Rosa Ricci" class="staff-image">
+          <div class="staff-overlay">
+            <div class="staff-text">Name: Rosa Ricci <br>
+            Position : Waitress <br>
+            Rosa is a student from Rome and works part-time in the restaurant.  Rosa has worked in restaurants 
+            in Rome, so has plenty of experience </div>
+          </div>
+        </div>
+
+          <div class="staff-container">
+            <img src = "Images/staff-images/john-mcstay.jpg" alt = "Picture of John McStay" class="staff-image">
+              <div class="staff-overlay">
+                <div class="staff-text">Name : John McStay<br>
+                  Position : Waiter <br>
+                  John started with Glasgow Italian Grill 3 years ago and was new to waitering.  During that time John has grown to                     being an important member of staff.</div>
+          </div>
+        </div>
+        
+        
+        
+      </div>
+    </main>
+
+    <!--Website Footer-->
+    <footer id ="footer">
+      <p>Follow us!
+    <!--Social media icons-->
+        <a href ="index.html" class="fa-brands fa-facebook-f"></a>
+        <a href ="index.html" class="fa-brands fa-instagram"></a>
+        <a href ="index.html" class="fa-brands fa-twitter"></a></p>
+      <p style="text-align:center;">Address: Glasgow Italian Grill,<br>
+        19 Hatfield Drive, <br>
+        Anniesland,<br>
+        Glasgow G12 0YE</p>
+      <p>Phone number: 0141 9496 0555 </p>
+      <p>Email address: <a href="mailto:Italian.grill@glasgow.com">Italian.grill@glasgow.com</a></p>
+    </footer>
+
+    <!--Insert Javascript-->
+    <script src="script.js"></script>
+  </body>
+</html>

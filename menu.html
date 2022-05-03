@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--Establishing the language of the website-->
+<html lang="en-GB">
+  <head>
+    <!--Setting information about the data within the website-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Italian Restaurant in North of Glasgow">
+    <meta name="keywords" content="Italian food, Italian Restaurant, Restaurants in Glasgow">
+    <meta name="author" content="Eilidh Boyd">
+
+    <!--Title of the website-->
+    <title>Glasgow Italian Grill</title>
+
+    <!--Insert CSS Styling-->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+
+    <!--Insert Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+
+    <!--Allow Website Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--Insert Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  
+  <body>
+
+    <!--Navigation Bar-->
+    <nav id ="navbar">
+      <!--Mobile Navigation Icon-->
+      <a href="javascript:void(0);" id="mobileNavIcon">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+      <!--Desktop Navigation-->
+       <nav id="mobileDesktopNav">
+        <ul id="menuItems">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!--Restaurant header-->
+      <h1 id="heading">Glasgow Italian Grill</h1>
+    </nav>
+    <!--Mobile navigation-->
+    <nav id="mobileNavDrawer">
+      <ul id="menuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <!--Insert content here-->
+    <main>
+      <h1 class = "mainHeading"> Our menu! </h1>
+      <div id = "menuInfo">
+        <p style="font-size:20px;">Here at Glasgow Italian Grill, we serve a wide range of cuisine - ranging from pasta and pizzas to soup and prawns!<br>
+      </br>View our full menu by clicking on the link below. </p>
+        <a href="menu.pdf">Click here to view our menu!</a>
+      </div>
+
+      <!--Slideshow container-->
+      <div class = "slideshow-container" style="width:100%">
+        
+        <!--Slideshow pictures-->
+        <div class="slideshowPics fade">
+          <img src="Images/menu-images/pizza-2.jpg">
+        </div>
+
+        <div class="slideshowPics fade">
+          <img src="Images/menu-images/pasta-1.jpg">
+        </div>
+
+        <div class="slideshowPics fade">
+          <img src="Images/menu-images/tiramisu.jpg">
+        </div>
+
+        <div class="slideshowPics fade">
+          <img src="Images/menu-images/bread.jpg">
+        </div>
+
+        <div class="slideshowPics fade">
+          <img src="Images/menu-images/skewer.jpg">
+        </div>
+
+        <!-- The dots/circles -->
+      <div style="text-align:center;"">
+        <!--Each span relates to respected slideshow image..-->
+        <span class="dot" onclick="currentPic(1)"></span>
+        <span class="dot" onclick="currentPic(2)"></span>
+        <span class="dot" onclick="currentPic(3)"></span>
+        <span class="dot" onclick="currentPic(4)"></span>
+        <span class="dot" onclick="currentPic(5)"></span>
+      </div>
+      
+      
+        <!--Buttons-->
+        <div class="buttons">
+          <a class = "previous" onclick="plusPics(-1)">&#10094;</a>
+          <a class = "next" onclick="plusPics(1)">&#10095;</a>
+        </div>
+      </div>
+
+      
+    </main>
+
+    <!--Website Footer-->
+    <footer id ="footer">
+      <p>Follow us!
+    <!--Social media icons-->
+        <a href ="index.html" class="fa-brands fa-facebook-f"></a>
+        <a href ="index.html" class="fa-brands fa-instagram"></a>
+        <a href ="index.html" class="fa-brands fa-twitter"></a></p>
+      <p style="text-align:center;">Address: Glasgow Italian Grill,<br>
+        19 Hatfield Drive, <br>
+        Anniesland,<br>
+        Glasgow G12 0YE</p>
+      <p>Phone number: 0141 9496 0555 </p>
+      <p>Email address: <a href="mailto:Italian.grill@glasgow.com">Italian.grill@glasgow.com</a></p>
+    </footer>
+
+    <!--Insert Javascript-->
+    <script src="script.js"></script>
+  </body>
+</html>

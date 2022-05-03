@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--Establishing the language of the website-->
+<html lang="en-GB">
+
+<head>
+  <!--Setting information about the data within the website-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Italian Restaurant in North of Glasgow">
+  <meta name="keywords" content="Italian food, Italian Restaurant, Restaurants in Glasgow">
+  <meta name="author" content="Eilidh Boyd"> <!--Title of the website-->
+  <title>Glasgow Italian Grill</title>
+
+  <!--Insert CSS Styling-->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <!--Insert Google fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
+
+  <!--Allow Website Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!--Insert Favicon-->
+  <link rel="icon" href="favicon.ico" type="image/x-image">
+</head>
+
+<body>
+
+  <!--Navigation Bar-->
+  <nav id="navbar">
+    <!--Mobile Navigation Icon-->
+    <a href="javascript:void(0);" id="mobileNavIcon">
+      <i class="fa-solid fa-bars"></i>
+    </a>
+    <!--Desktop Navigation-->
+    <nav id="mobileDesktopNav">
+      <ul id="menuItems">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!--Restaurant header-->
+    <h1 id="heading">Glasgow Italian Grill</h1>
+  </nav>
+  <!--Mobile navigation-->
+  <nav id="mobileNavDrawer">
+    <ul id="menuItems">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="staff.html">Staff</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!--Insert content here-->
+  <main>
+    <!--Information about restaurant  along with image of restaurant-->
+    <h1 class = "mainHeading"">Welcome!</h1>
+    <div id="aboutRestaurant">
+      <img id = "mobilePicture" src = "Images/restaurant-mobile.jpg" alt = "Picture of restaurant">
+      <img id = "tabletPicture" src = "Images/restaurant-tablet.jpg" alt = "Picture of restaurant">
+      <img id = "desktopPicture" src = "Images/restaurant-desktop.jpg" alt = "Picture of restaurant">
+      <p id ="overviewText">Glasgow Italian Grill are a family run restaurant business, established in 2010,         in the north of Glasgow. We pride ourselves as one of the finest Italian restaurants in Scotland.<br>
+      <br>Our team have a passion for what we do and take great  pride in our classic food and service.  Good        Italian cuisine  uses only the freshest ingredients. That’s why we prepare our sauces and breads              daily. <br>
+      <br>In short, we’re passionate about what we do. We love what we do, and we want others to share our 
+      enthusiasm. We want you to come and have a great eating out experience. </p>
+    </div>
+    
+    <!--Navigation by clicking on image-->
+    <div id ="picNavigation">
+      <a href="contact.html"><img src = "Images/image-links/contact.jpg" alt = "Contact page"></a>
+      <a href="menu.html"><img src= "Images/image-links/food.jpg" alt = "Menu page"></a>
+      <a href="staff.html"><img src = "Images/image-links/table.jpg" alt ="Staff page"></a>
+    </div>
+  </main>
+
+  <!--Website Footer-->
+  <footer id="footer">
+    <p>Follow us!
+      <!--Social media icons-->
+      <a href="index.html" class="fa-brands fa-facebook-f"></a>
+      <a href="index.html" class="fa-brands fa-instagram"></a>
+      <a href="index.html" class="fa-brands fa-twitter"></a>
+    </p>
+    <p style="text-align:center;">Address: Glasgow Italian Grill,<br>
+      19 Hatfield Drive, <br>
+      Anniesland,<br>
+      Glasgow G12 0YE</p>
+    <p>Phone number: 0141 9496 0555 </p>
+    <p>Email address: <a href="mailto:Italian.grill@glasgow.com">Italian.grill@glasgow.com</a></p>
+  </footer>
+
+  <!--Insert Javascript-->
+  <script src="script.js"></script>
+</body>
+
+</html>
